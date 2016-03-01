@@ -1,0 +1,9 @@
+{
+  "working_dir": "output-ep",
+  "training_fn": "training.h5",
+  "dependent_variable": "label",
+  "dependent_values": [0, 1],
+  "sample_name_variables": ["enhancer_name", "promoter_name"],
+  "nonpredictor_variables": ["enhancer_chrom", "enhancer_start", "enhancer_end", "promoter_chrom", "promoter_start", "promoter_end", "window_chrom", "window_start", "window_end", "window_name", "active_promoters_in_window", "interactions_in_window", "enhancer_distance_to_promoter", "bin"],
+  "regions": ["enhancer", "promoter"]
+}

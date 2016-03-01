@@ -1,0 +1,5 @@
+{
+  "base_config_fn": "ep.json",
+  "working_dir": "output-eep",
+  "enhancer_extension_size": 3000
+}
