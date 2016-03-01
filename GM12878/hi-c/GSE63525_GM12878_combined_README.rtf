@@ -1,0 +1,174 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww28600\viewh16520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 READ ME:\
+\
+The archive \'91GM12878_combined_contact_matrices.tar.gz\'92 contains the raw observed contact matrices for the GM12878 combined (primary+replicate) map presented in Rao, Huntley, et al, Cell, 2014 as well as normalization vectors to transform the raw matrices into normalized matrices and 1-d expected vectors to transform the observed matrices into O/E matrices (see the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014 for details). \
+\
+Data from the following experiments is contained in the GM12878 combined contact matrices:\
+HIC001\
+HIC002\
+HIC003\
+HIC004\
+HIC005\
+HIC006\
+HIC007\
+HIC008\
+HIC009\
+HIC010\
+HIC011\
+HIC012\
+HIC013\
+HIC014\
+HIC015\
+HIC016\
+HIC017\
+HIC018\
+HIC019\
+HIC020\
+HIC021\
+HIC022\
+HIC023\
+HIC024\
+HIC025\
+HIC026\
+HIC027\
+HIC028\
+HIC029\
+\
+See Supplemental Table S1 of Rao, Huntley, et al, Cell, 2014 for more details regarding the individual experiments.\
+\
+The archive contains intrachromosomal contact matrices at 10 different base pair delimited resolutions (1 Mb, 500kb, 250kb, 100kb, 50kb, 25kb, 10kb, 5kb, 1kb). At each resolution, files associated with each chromosome are provided in a separate subdirectory. Within, each chromosome subdirectory, there are two further subdirectories (MAPQG0 and MAPQGE30). The MAPQG0 subdirectory contains files associated with the contact matrices constructed from all read pairs that uniquely align to the genome (MAPQ>0). The MAPQGE30 subdirectory contains files associated with the contact matrices constructed from all read pairs that map to the genome with a MAPQ>=30. \
+\
+For example, the files associated with the contact matrix for chromosome 1 at 5 kb resolution using MAPQ>=30 read pairs are in the subdirectory:\
+\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/\
+\
+There are 7 text files associated with each intrachromosomal contact matrix ([CHR] represents the chromosome number and [RES] represents the resolution):\
+\
+[CHR]_[RES].RAWobserved\
+[CHR]_[RES].KRnorm\
+[CHR]_[RES].VCnorm\
+[CHR]_[RES].SQRTVCnorm\
+[CHR]_[RES].RAWexpected\
+[CHR]_[RES].KRexpected\
+[CHR]_[RES].VCexpected\
+[CHR]_[RES].SQRTVCexpected\
+\
+For example, the files associated with the contact matrix for chromosome 1 at 5 kb resolution using MAPQ>=30 read pairs are:\
+\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.RAWobserved\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.KRnorm\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.VCnorm\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.SQRTVCnorm\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.RAWexpected\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.KRexpected\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.VCexpected\
+GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.SQRTVCexpected\
+\
+*.RAWobserved is a text file with the raw observed contact matrix in sparse matrix notation. Each line has three fields: i, j, and M_i,j. (i and j are written as the left edge of the bin at a given resolution; for example, at 100 kb resolution, the entry corresponding to the first row and tenth column of the matrix would correspond to M_i,j, where i=0, j=900000). Only the upper triangle of the matrix is provided (i.e. i>=j), the matrix is symmetric, so M_i,j = M_j,i. \
+\
+The three *norm files are normalization vectors that can be used to transform the raw contact matrices M into normalized matrices M*. (See the glossary below and section II.b of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014 for more information about the different types of normalizations. All analyses and results presented in the main text of Rao, Huntley, et al, Cell, 2014 were performed using KR normalized contact matrices.) Each file is ordered such that the first line of the normalization vector file is the norm factor for the first row/column of the corresponding raw contact matrix, the second line is the factor for the second row/column of the contact matrix, and so on. To normalize, an entry M_i,j in a *RAWobserved file, divide the entry by the corresponding norm factors for i and j. \
+\
+For example, here is a line from the 5kb chr1 MAPQGE30 raw observed contact matrix (GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.RAWobserved):\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs22 \cf0 \CocoaLigature0 40000000	40100000	59.0\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 To normalize this entry using the KR normalization vector, one would divide 59.0 by the 8001st line ((40000000/5000)+1=8001) and the 8021st line ((40100000/5000)+1=8021) of GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.KRnorm. The 8001st line of the KR norm file is 
+\f1\fs22 \CocoaLigature0 1.2988778370674694;
+\f0\fs24 \CocoaLigature1 The 8021st line of the KR norm file is 
+\f1\fs22 \CocoaLigature0 1.6080499717941548. 
+\f0\fs24 \CocoaLigature1 So the corresponding KR normalized entry for the entry above is 
+\f1\fs22 \CocoaLigature0 59.0/(1.2988778370674694*1.6080499717941548) 
+\f0\fs24 \CocoaLigature1 or 
+\f1\fs22 \CocoaLigature0 28.24776973966101. 
+\f0\fs24 \CocoaLigature1 If the KR normalization vector file is empty or all NaNs, then the KR algorithm didn\'92t converge on that particular matrix (likely due to sparsity of the matrix).  
+\f1\fs22 \CocoaLigature0 \
+\
+
+\f0\fs24 \CocoaLigature1 The four *expected files are expected vectors that can be used to construct O/E matrices that account for the increased number of contacts seen at short distances due to to random polymer interactions driven by one-dimensional genome proximity (see the glossary below and section II.c of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014 for more information about the construction of these expected vectors and O/E matrices). These expected files are ordered such that first line of the expected vector file is the expected number of contacts between two loci separated by 0*RES base pairs, the second line of the file is the expected number of contacts between two loci separated by 1*RES base pairs, and so on. So to create the O/E matrix, divide each entry M_i,j by the expected value corresponding to the distance i-j. \
+\
+For example, for the above entry of the 5kb chr1 MAPQGE30 raw observed contact matrix, to get the corresponding entry of the O/E matrix divide by the 21st line (((41000000-40000000)/5000)+1=21) of GM12878_combined/5kb_resolution_intrachromosomal/chr1/MAPQGE30/chr1_5kb.RAWexpected. The 21st line of the raw expected file is 
+\f1\fs22 \CocoaLigature0 20.101675. 
+\f0\fs24 \CocoaLigature1 So the corresponding raw O/E entry for the entry above is 
+\f1\fs22 \CocoaLigature0 59.0/20.101675 or 2.935078793185145. 
+\f0\fs24 \CocoaLigature1 To create the normalized O/E files, first construct the normalized observed matrices as above and then divide by the corresponding line of the normalized expected file (i.e. *.KRexpected, *.VCexpected, or *.SQRTVCexpected). \
+\
+The archive also contains interchromosomal contact matrices at 100kb resolution. The files associated with each pair of chromosomes are provided in a separated subdirectory. Within each chromosome pair subdirectory, there are two further subdirectories (MAPQG0 and MAPQGE30). The MAPQG0 subdirectory contains files associated with the contact matrices constructed from all read pairs that uniquely align to the genome (MAPQ>0). The MAPQGE30 subdirectory contains files associated with the contact matrices constructed from all read pairs that map to the genome with a MAPQ>=30.\
+\
+For example, the files associated with the contact matrix for chromosome 1 and chromosome 2 using MAPQ>=30 read pairs are in the subdirectory:\
+\
+GM12878_combined/100kb_resolution_interchromosomal/chr1_chr2/MAPQGE30/\
+\
+There are 15 text files associated with each interchromosomal contact matrix ([CHR1] represents the first chromosome number, [CHR2] represents the second chromosome number, and [RES] represents the resolution):\
+\
+[CHR1]_[CHR2]_[RES].RAWobserved\
+[CHR1]_[RES].KRnorm\
+[CHR1]_[RES].VCnorm\
+[CHR1]_[RES].SQRTVCnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 [CHR1]_[RES].INTERKRnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 [CHR1]_[RES].INTERVCnorm\
+[CHR1]_[RES].GWKRnorm\
+[CHR1]_[RES].GWVCnorm\
+[CHR2]_[RES].KRnorm\
+[CHR2]_[RES].VCnorm\
+[CHR2]_[RES].SQRTVCnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 [CHR2]_[RES].INTERKRnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 [CHR2]_[RES].INTERVCnorm\
+[CHR2]_[RES].GWKRnorm\
+[CHR2]_[RES].GWVCnorm\
+\
+For example, the files associated with the contact matrix for chromosome 1 and chromosome 2 using MAPQ>=30 read pairs are:\
+\
+chr1_2_100kb.RAWobserved\
+chr1_100kb.KRnorm\
+chr1_100kb.VCnorm\
+chr1_100kb.SQRTVCnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 chr1_100kb.INTERKRnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 chr1_100kb.INTERVCnorm\
+chr1_100kb.GWKRnorm\
+chr1_100kb.GWVCnorm\
+chr2_100kb.KRnorm\
+chr2_100kb.VCnorm\
+chr2_100kb.SQRTVCnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 chr2_100kb.INTERKRnorm
+\f1\fs22 \CocoaLigature0 \
+
+\f0\fs24 \CocoaLigature1 chr2_100kb.INTERVCnorm\
+chr2_100kb.GWKRnorm\
+chr2_100kb.GWVCnorm\
+\
+The *.RAWobserved files for the interchromosomal matrices are formatted the same way as the intrachromosomal matrices above except the i locus corresponds to CHR1 and the j locus corresponds to CHR2. One can create the normalized matrices as above except one should use the line corresponding to the i locus norm factor from the CHR1 normalization vector file and the line corresponding to the j locus norm factor from the CHR2 normalization vector file. (See the glossary below and section II.b of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014 for more information about the different types of normalizations.)\
+\
+GLOSSARY:\
+KRnorm = normalization vector obtained using the matrix balancing procedure of Knight and Ruiz on the intrachromosomal contact matrix, as reimplemented by us in Java. See Knight & Ruiz, IMA Journal of Numerical Analysis, 2012; section II.b.4 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+GWKRnorm = normalization vector obtained using the matrix balancing procedure of Knight and Ruiz on the entire genome-wide contact matrix (i.e. all intrachromosomal and interchromosomal contact matrices), as reimplemented by us in Java. See Knight & Ruiz, IMA Journal of Numerical Analysis, 2012; section II.b.4 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+INTERKRnorm = normalization vector obtained using the matrix balancing procedure of Knight and Ruiz on the entire genome-wide contact matrix without intrachromosomal contact matrices (i.e. only interchromosomal contact matrices), as reimplemented by us in Java. See Knight & Ruiz, IMA Journal of Numerical Analysis, 2012; section II.b.4 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+VCnorm = normalization vector obtained by calculating coverages (row-sums of the intrachromosomal contact matrix) for each locus as performed in Lieberman-Aiden, van Berkum, et al. See Lieberman-Aiden, van Berkum, et al, Science 2009; section II.b.1 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+GWVCnorm = normalization vector obtained by calculating genome-wide coverages (row-sums of the genome-wide contact matrix, i.e. both intra- and inter-chromosomal contact matrices) for each locus as performed in Lieberman-Aiden, van Berkum, et al. See Lieberman-Aiden, van Berkum, et al, Science 2009; section II.b.1 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+INTERVCnorm = normalization vector obtained by calculating interchromosomal coverages (row-sums across interchromosomal contact matrices) for each locus as performed in Lieberman-Aiden, van Berkum, et al. See Lieberman-Aiden, van Berkum, et al, Science 2009; section II.b.1 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+SQRTVCnorm = normalization vector obtained by taking the square root of the VCnorm vector. See section II.b.1 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+RAWexpected = a genome-wide model of interaction probability as a function of 1-dimensional genomic distance as introduced in Lieberman-Aiden, van Berkum, et al. and refined by us. See Lieberman-Aiden, van Berkum, et al, Science 2009; section II.c.1 of the Extended Experimental Procedures of Rao, Huntley, et al, Cell, 2014.\
+KRexpected = the same model of interaction probability as a function of 1-dimensional genomic distance as RAWexpected except calculated from the KR normalized contact matrix. \
+VCexpected = the same model of interaction probability as a function of 1-dimensional genomic distance as RAWexpected except calculated from the VC normalized contact matrix. \
+SQRTVCexpected = the same model of interaction probability as a function of 1-dimensional genomic distance as RAWexpected except calculated from the SQRTVC normalized contact matrix.}
