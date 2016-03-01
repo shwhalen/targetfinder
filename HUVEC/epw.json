@@ -1,0 +1,5 @@
+{
+  "base_config_fn": "../K562/ep.json",
+  "working_dir": "output-epw",
+  "regions": ["enhancer", "promoter", "window"]
+}
