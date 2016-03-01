@@ -86,7 +86,7 @@ TargetFinder requires:
 - pytables (tested 3.2.2)
 - bedtools (tested 2.25.0)
 
-We recommend the [Anaconda](https://www.continuum.io) python distribution, and specifically the minimal [Miniconda](http://conda.pydata.org/miniconda.html) installer. After running the installer and adding Miniconda to your `$PATH` variable, simply run
+We recommend the [Anaconda](https://www.continuum.io) Python distribution, and specifically the minimal [Miniconda](http://conda.pydata.org/miniconda.html) installer. After running the installer and adding Miniconda to your `$PATH` variable, simply run
 
     conda install scikit-learn pandas numexpr pytables
 
@@ -128,4 +128,4 @@ Since most settings are shared between datasets within a given cell line, we cho
 }
 ```
 
-This says to read settings from `eep.json` but to override the working directory, add window features, and make sure we aren't extending enhancers or promoters for this dataset since we are using separate window features.
+This says to read settings from `ep.json` but to override the working directory and add window features.
