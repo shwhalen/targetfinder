@@ -1,0 +1,20 @@
+name,filename,source,accession
+CTCF,wgEncodeAwgTfbsBroadNhekCtcfUniPk.narrowPeak,ENCODE,GSE29611
+DNase-seq,E127-DNase.macs2.narrowPeak,ENCODE,GSE29692
+EZH2,wgEncodeAwgTfbsBroadNhekEzh239875UniPk.narrowPeak,ENCODE,GSE29611
+FAIRE-seq,wgEncodeOpenChromFaireNhekPk.narrowPeak,ENCODE,GSE35239
+GRHL3,GRHL3-Hopkin_peaks.narrowPeak,Hopkin et al.,GSE42180
+H2AZ,E127-H2A.Z.narrowPeak,ENCODE,GSE29611
+H3K27ac,E127-H3K27ac.narrowPeak,ENCODE,GSE29611
+H3K27me3,E127-H3K27me3.narrowPeak,ENCODE,GSE29611
+H3K36me3,E127-H3K36me3.narrowPeak,ENCODE,GSE29611
+H3K4me1,E127-H3K4me1.narrowPeak,ENCODE,GSE29611
+H3K4me2,E127-H3K4me2.narrowPeak,ENCODE,GSE29611
+H3K4me3,E127-H3K4me3.narrowPeak,ENCODE,GSE29611
+H3K79me2,E127-H3K79me2.narrowPeak,ENCODE,GSE29611
+H3K9ac,E127-H3K9ac.narrowPeak,ENCODE,GSE29611
+H3K9me1,E127-H3K9me1.narrowPeak,ENCODE,GSE29611
+H3K9me3,E127-H3K9me3.narrowPeak,ENCODE,GSE29611
+H4K20me1,E127-H4K20me1.narrowPeak,ENCODE,GSE29611
+POLR2A,wgEncodeAwgTfbsBroadNhekPol2bUniPk.narrowPeak,ENCODE,GSE29611
+WDR5,WDR5-Hopkin_peaks.narrowPeak,Hopkin et al.,GSE42180
