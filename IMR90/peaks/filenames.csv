@@ -1,0 +1,56 @@
+name,filename,source,accession
+BDP1,BDP1-Renaud_peaks.narrowPeak,Renaud et al.,GSE47849
+CEBPB,wgEncodeAwgTfbsSydhImr90CebpbIggrabUniPk.narrowPeak,ENCODE,GSE31477
+CHD1,wgEncodeSydhTfbsImr90Chd1nb10060411IggrabPk.narrowPeak,ENCODE,GSE31477
+CTCF,wgEncodeAwgTfbsSydhImr90CtcfbIggrabUniPk.narrowPeak,ENCODE,GSE31477
+DNase-seq,E017-DNase.macs2.narrowPeak,Roadmap Epigenomics,GSE18927
+EP300,EP300-LICR_peaks.narrowPeak,Jin et al.,GSE43070
+GDOWN1,GDOWN1-LICR_peaks.narrowPeak,Jishage et al.,GSE33128
+H1B,H1B-Li_peaks.narrowPeak,Li et al.,GSE26979
+H2AK5ac,E017-H2AK5ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H2AK9ac,E017-H2AK9ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H2AY,H2AY-Chen_peaks.narrowPeak,Chen et al.,GSE54847
+H2AZ,E017-H2A.Z.narrowPeak,Roadmap Epigenomics,GSE16256
+H2BK120ac,E017-H2BK120ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H2BK12ac,E017-H2BK12ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H2BK15ac,E017-H2BK15ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H2BK20ac,E017-H2BK20ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H2BK5ac,E017-H2BK5ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K14ac,E017-H3K14ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K18ac,E017-H3K18ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K23ac,E017-H3K23ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K27ac,E017-H3K27ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K27me3,E017-H3K27me3.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K36me3,E017-H3K36me3.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K4ac,E017-H3K4ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K4me1,E017-H3K4me1.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K4me2,E017-H3K4me2.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K4me3,E017-H3K4me3.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K56ac,E017-H3K56ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K79me1,E017-H3K79me1.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K79me2,E017-H3K79me2.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K9ac,E017-H3K9ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H3k9me1,E017-H3K9me1.narrowPeak,Roadmap Epigenomics,GSE16256
+H3K9me3,E017-H3K9me3.narrowPeak,Roadmap Epigenomics,GSE16256
+H4K16ac,H4K16ac-Sammons_peaks.narrowPeak,Sammons et al.,GSE58740
+H4K20me1,E017-H4K20me1.narrowPeak,Roadmap Epigenomics,GSE16256
+H4K5ac,E017-H4K5ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H4K8ac,E017-H4K8ac.narrowPeak,Roadmap Epigenomics,GSE16256
+H4K91ac,E017-H4K91ac.narrowPeak,Roadmap Epigenomics,GSE16256
+LMNB1,LMNB1-Otte_peaks.narrowPeak,Otte et al.,GSE53332
+MAFK,wgEncodeAwgTfbsSydhImr90MafkIggrabUniPk.narrowPeak,ENCODE,GSE31477
+MAZ,wgEncodeSydhTfbsImr90Mazab85725IggrabPk.narrowPeak,ENCODE,GSE31477
+MECP2,MECP2-Maunakea_peaks.narrowPeak,Maunakea et al.,GSE47678
+MXI1,wgEncodeSydhTfbsImr90Mxi1IggrabPk.narrowPeak,ENCODE,GSE31477
+POLR2A,wgEncodeAwgTfbsSydhImr90Pol2IggrabUniPk.narrowPeak,ENCODE,GSE31477
+POLR3D,POLR3D-Renaud_peaks.narrowPeak,Renaud et al.,GSE47849
+POLR3G,POLR3G-Renaud_peaks.narrowPeak,Renaud et al.,GSE47849
+POLR3GL,POLR3GL-Renaud_peaks.narrowPeak,Renaud et al.,GSE47849
+RAD21,wgEncodeAwgTfbsSydhImr90Rad21IggrabUniPk.narrowPeak,ENCODE,GSE31477
+RB1,RB1-Chicas_peaks.narrowPeak,Chicas et al.,GSE19899
+RBL2,RBL2-Chicas_peaks.narrowPeak,Chicas et al.,GSE19899
+RCOR1,wgEncodeSydhTfbsImr90Corestsc30189IggrabPk.narrowPeak,ENCODE,GSE31477
+RELA,RELA-LICR_peaks.narrowPeak,Jin et al.,GSE43070
+RFX5,wgEncodeSydhTfbsImr90Rfx5IggrabPk.narrowPeak,ENCODE,GSE31477
+TP53,TP53-Sammons_peaks.narrowPeak,Sammons et al.,GSE58740
+YAP1,YAP1-Stein_peaks.narrowPeak,Stein et al.,GSE61852
